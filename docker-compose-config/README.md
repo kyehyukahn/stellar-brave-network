@@ -40,7 +40,7 @@ $ python make_env.py <config file>
 
 `config file`의 setting과 같은 이름의 폴더가 생기고 폴더아래 docker-compose 설정파일이 생성됨
 
-ex)config-12.json -> docker-compose-12 
+ex)config-12.json -> docker-compose-12
 
 ## docker-compose 실행 후 shell script 실행
 
@@ -48,7 +48,7 @@ ex)config-12.json -> docker-compose-12
 $ cd <docker-compose folder>
 $ . ./account.sh   				
 
-account 3개에 대한 public key와 address를 각각 변수에 지정 
+account 3개에 대한 public key와 address를 각각 변수에 지정
 
 $ . ./init_account.sh				
 
@@ -84,4 +84,8 @@ stellar database table명 확인
 $ . ./get_database.sh <table name>
 
 `table name` 폴더에 node별 database의 csv파일 생성
+
+$ . ./show.sh <ledger seq. no.>
+
+stellar ledgerheaders의 sequence number에 따른 헤더 가져와서 비교해 보기
 ```
